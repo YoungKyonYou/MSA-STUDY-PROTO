@@ -36,5 +36,5 @@ message UserId{
 
 
 service OrderService{
-	rpc GetOrder(UserId) returns (ResponseOrder);
+	rpc GetOrder(UserId) returns (stream ResponseOrder);
 }
